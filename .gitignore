@@ -1,0 +1,10 @@
+echo "# Node.js
+node_modules/
+.env
+dist/
+coverage/
+
+# IDE
+.vscode/
+.idea/
+" > .gitignore

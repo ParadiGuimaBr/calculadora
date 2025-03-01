@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Calculadora JavaScript</h1>
+        
+        <div class="input-group">
+            <input type="number" id="num1" placeholder="Primeiro número" step="any">
+            <input type="number" id="num2" placeholder="Segundo número" step="any">
+        </div>
+
+        <select id="operacao">
+            <option value="1">Adição (+)</option>
+            <option value="2">Subtração (-)</option>
+            <option value="3">Multiplicação (×)</option>
+            <option value="4">Divisão (÷)</option>
+            <option value="5">Potência (^)</option>
+        </select>
+
+        <div class="buttons">
+            <button onclick="calcular()">Calcular</button>
+            <button onclick="resetar()">Resetar</button>
+        </div>
+
+        <div id="resultado" class="resultado"></div>
+        <div id="erro" class="error-message"></div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
